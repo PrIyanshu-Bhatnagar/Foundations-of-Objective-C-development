@@ -1,0 +1,12 @@
+PODS:
+  - DistanceGetter (0.1.1)
+
+DEPENDENCIES:
+  - DistanceGetter
+
+SPEC CHECKSUMS:
+  DistanceGetter: cd224fae834fa5385ae7093edff7f3dcab226a38
+
+PODFILE CHECKSUM: da52864494be7b230b78db883154c2202d48bf89
+
+COCOAPODS: 1.0.1

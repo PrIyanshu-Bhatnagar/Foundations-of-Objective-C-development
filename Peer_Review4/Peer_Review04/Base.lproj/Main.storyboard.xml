@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWe-Wj-DjC">
+                                <frame key="frameInset" minX="16" minY="245" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcX-I3-YTd">
+                                <frame key="frameInset" minX="234" minY="245" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE3-CI-FcU">
+                                <frame key="frameInset" minX="234" minY="302" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter start location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Sb-7O-mtl">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfM-oY-Tg9">
+                                <frame key="frameInset" minX="234" minY="360" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqV-M9-Ps8">
+                                <frame key="frameInset" minX="109" minY="471" width="103" height="36"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="CalButton_imp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOG-Wu-z4Y"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Q9t-7L-zCP">
+                                <segments>
+                                    <segment title="Meters"/>
+                                    <segment title="Kilometers"/>
+                                    <segment title="Miles"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-IL-vng">
+                                <frame key="frameInset" minX="234" minY="420" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fourth Destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-ep-kba">
+                                <frame key="frameInset" minX="16" minY="420" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Third Destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F88-6N-uSr">
+                                <frame key="frameInset" minX="16" minY="360" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDi-qu-wac">
+                                <frame key="frameInset" minX="16" minY="302" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Sb-7O-mtl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="132" id="215-8N-rpI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XDi-qu-wac" secondAttribute="leading" id="BFF-AJ-JXn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IWe-Wj-DjC" secondAttribute="leading" id="DG6-sK-DR1"/>
+                            <constraint firstItem="F88-6N-uSr" firstAttribute="top" secondItem="XDi-qu-wac" secondAttribute="bottom" constant="28" id="Dwj-Id-Z20"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NfM-oY-Tg9" secondAttribute="trailing" id="GC3-Cz-ct2"/>
+                            <constraint firstItem="Q9t-7L-zCP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gc9-FI-gbB"/>
+                            <constraint firstItem="IWe-Wj-DjC" firstAttribute="top" secondItem="Q9t-7L-zCP" secondAttribute="bottom" constant="20" id="IZk-ti-8uu"/>
+                            <constraint firstItem="XDi-qu-wac" firstAttribute="top" secondItem="IWe-Wj-DjC" secondAttribute="bottom" constant="27" id="InQ-LQ-SNT"/>
+                            <constraint firstItem="IWe-Wj-DjC" firstAttribute="centerY" secondItem="CcX-I3-YTd" secondAttribute="centerY" id="KRa-TJ-8qI"/>
+                            <constraint firstItem="Q9t-7L-zCP" firstAttribute="top" secondItem="1Sb-7O-mtl" secondAttribute="bottom" constant="15" id="KnU-hB-eCS"/>
+                            <constraint firstItem="XDi-qu-wac" firstAttribute="centerY" secondItem="aE3-CI-FcU" secondAttribute="centerY" id="LaJ-zV-GEp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Sb-7O-mtl" secondAttribute="trailing" id="Mxz-53-xor"/>
+                            <constraint firstItem="1Sb-7O-mtl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QbJ-Lu-Kia"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aE3-CI-FcU" secondAttribute="trailing" id="RqP-q0-pjO"/>
+                            <constraint firstItem="F88-6N-uSr" firstAttribute="centerY" secondItem="NfM-oY-Tg9" secondAttribute="centerY" id="SD2-2M-iOu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1Sb-7O-mtl" secondAttribute="leading" id="Wje-jq-E7j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4dK-IL-vng" secondAttribute="trailing" id="a3R-Yh-Fe0"/>
+                            <constraint firstItem="eRw-ep-kba" firstAttribute="top" secondItem="F88-6N-uSr" secondAttribute="bottom" constant="30" id="be1-Xr-7Sa"/>
+                            <constraint firstItem="eRw-ep-kba" firstAttribute="centerY" secondItem="4dK-IL-vng" secondAttribute="centerY" id="e0w-m3-XJr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="F88-6N-uSr" secondAttribute="leading" id="eX9-qe-mns"/>
+                            <constraint firstItem="HqV-M9-Ps8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hxg-Td-eeM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CcX-I3-YTd" secondAttribute="trailing" id="j9a-oL-SI5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HqV-M9-Ps8" secondAttribute="bottom" constant="61" id="jaR-It-BLG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="eRw-ep-kba" secondAttribute="leading" id="vnF-Um-tyM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="HqV-M9-Ps8" id="4hc-Ql-6FG"/>
+                        <outlet property="disA" destination="CcX-I3-YTd" id="0SC-WN-GDs"/>
+                        <outlet property="disB" destination="aE3-CI-FcU" id="oVM-cE-GAP"/>
+                        <outlet property="disC" destination="NfM-oY-Tg9" id="6UK-af-wcT"/>
+                        <outlet property="disD" destination="4dK-IL-vng" id="Mh4-dB-FKl"/>
+                        <outlet property="endlocA" destination="IWe-Wj-DjC" id="OGe-gA-HWC"/>
+                        <outlet property="endlocB" destination="XDi-qu-wac" id="WVY-QY-lbx"/>
+                        <outlet property="endlocC" destination="F88-6N-uSr" id="5CV-KA-cXM"/>
+                        <outlet property="endlocD" destination="eRw-ep-kba" id="vSO-fj-deN"/>
+                        <outlet property="segmentcon" destination="Q9t-7L-zCP" id="JME-cw-jFk"/>
+                        <outlet property="startloc" destination="1Sb-7O-mtl" id="z7b-UH-QJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="121.47887323943662"/>
+        </scene>
+    </scenes>
+</document>
