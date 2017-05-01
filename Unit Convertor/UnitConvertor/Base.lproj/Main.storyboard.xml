@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Z-hT-sx6">
+                                <rect key="frame" x="0.0" y="129" width="169" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kilometers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-FJ-JR0">
+                                <rect key="frame" x="177" y="138" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-CL-6We">
+                                <rect key="frame" x="0.0" y="179" width="320" height="29"/>
+                                <segments>
+                                    <segment title="Miles"/>
+                                    <segment title="Meters"/>
+                                    <segment title="centimeters"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click Convert for the answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-eO-HXE">
+                                <rect key="frame" x="0.0" y="273" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu6-mk-90T">
+                                <rect key="frame" x="126" y="235" width="69" height="30"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPD-a5-gFB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wqc-FJ-JR0" firstAttribute="leading" secondItem="Y3Z-hT-sx6" secondAttribute="trailing" constant="8" id="ADA-Y2-mZI"/>
+                            <constraint firstItem="3WW-CL-6We" firstAttribute="top" secondItem="Wqc-FJ-JR0" secondAttribute="bottom" constant="20" id="G8N-sw-2fV"/>
+                            <constraint firstItem="hgM-eO-HXE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I5b-Hb-bGm"/>
+                            <constraint firstItem="3WW-CL-6We" firstAttribute="top" secondItem="Y3Z-hT-sx6" secondAttribute="bottom" constant="20" id="NMF-ze-dm7"/>
+                            <constraint firstItem="pu6-mk-90T" firstAttribute="top" secondItem="3WW-CL-6We" secondAttribute="bottom" constant="28" id="TFY-bx-cIz"/>
+                            <constraint firstItem="pu6-mk-90T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WdT-Ug-d4U"/>
+                            <constraint firstItem="hgM-eO-HXE" firstAttribute="top" secondItem="pu6-mk-90T" secondAttribute="bottom" constant="8" id="dqA-sd-M5q"/>
+                            <constraint firstItem="hgM-eO-HXE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1I-gn-Kia"/>
+                            <constraint firstItem="3WW-CL-6We" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6b-qC-gKf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="Y3Z-hT-sx6" id="UsK-FJ-sbv"/>
+                        <outlet property="outputLabel" destination="hgM-eO-HXE" id="K8F-3v-fvu"/>
+                        <outlet property="segmentController" destination="3WW-CL-6We" id="9WL-HE-UqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-271"/>
+        </scene>
+    </scenes>
+</document>
